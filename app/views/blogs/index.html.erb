@@ -1,5 +1,5 @@
 <h1>Blogs</h1>
 
 <%- @blogs.each do |blog| -%>
-  <p><%= link_to blog.name, blog %></p>
+  <p><%= link_to blog.name, root_url(subdomain: blog.subdomain) %></p>
 <%- end unless @blogs.blank? -%>
