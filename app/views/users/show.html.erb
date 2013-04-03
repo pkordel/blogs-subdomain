@@ -9,6 +9,7 @@
     <td><%= link_to subdomain.name, [@user, subdomain] %></td>
     <td><%= link_to 'Edit', edit_user_subdomain_url(@user, subdomain) %></td>
     <td><%= link_to 'Destroy', [@user, subdomain], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to "Visit #{root_url(subdomain: subdomain.name)}", root_url(subdomain: subdomain.name) %></td>
   </tr>
 <% end %>
 </table>
