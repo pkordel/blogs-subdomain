@@ -1,5 +1,7 @@
 <h1>Blogs</h1>
 
+<p><%= link_to "View List of Users", users_path %></p>
+
 <%- @blogs.each do |blog| -%>
   <p><%= link_to blog.name, root_url(subdomain: blog.subdomain) %></p>
 <%- end unless @blogs.blank? -%>
