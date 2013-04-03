@@ -1,0 +1,6 @@
+<h1>Editing subdomain</h1>
+<%= form_for [@user, @subdomain] do |f| %>
+  <%= render 'form' %>
+<%- end -%>
+<%= link_to 'Show', [@user, @subdomain] %> |
+<%= link_to @subdomain.user.name, user_url(@subdomain.user) %>
